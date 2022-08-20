@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Nasabah;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -15,6 +17,11 @@ class DashboardController extends Controller
     {
         return view('dashboard',[
             'title' => 'Dashboard',
+            'total_pendaftar'=>Nasabah::all()->count(),
+            'nasabah_aktif'=>Nasabah::select()->where('status','active')->get()->count(),
+            'nasabah_tidak_aktif'=>Nasabah::select()->where('status','inactive')->get()->count(),
+            'pendaftar_hari_ini'=>Nasabah::select()->where('status','inactive')->wheredate('created_at',Carbon::now()->format('d-m-Y'))->get()->count(),
+
         ]);
     }
 

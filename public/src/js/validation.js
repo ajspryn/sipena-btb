@@ -8,29 +8,29 @@ import Toastify from "toastify-js";
         let valid = pristine.validate();
 
         if (valid) {
-            Toastify({
-                node: $("#success-notification-content")
-                    .clone()
-                    .removeClass("hidden")[0],
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-            }).showToast();
+            // Toastify({
+            //     node: $("#success-notification-content")
+            //         .clone()
+            //         .removeClass("hidden")[0],
+            //     duration: 3000,
+            //     newWindow: true,
+            //     close: true,
+            //     gravity: "top",
+            //     position: "right",
+            //     stopOnFocus: true,
+            // }).showToast();
         } else {
-            Toastify({
-                node: $("#failed-notification-content")
-                    .clone()
-                    .removeClass("hidden")[0],
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-            }).showToast();
+            // Toastify({
+            //     node: $("#failed-notification-content")
+            //         .clone()
+            //         .removeClass("hidden")[0],
+            //     duration: 3000,
+            //     newWindow: true,
+            //     close: true,
+            //     gravity: "top",
+            //     position: "right",
+            //     stopOnFocus: true,
+            // }).showToast();
         }
     }
 

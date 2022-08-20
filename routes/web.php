@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExportController;
 use App\Http\Controllers\NasabahController;
 use App\Http\Controllers\DashboardController;
 
@@ -16,7 +17,7 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('form');
 });
 Route::get('/berhasil', function () {
     return view('berhasil');
@@ -26,6 +27,7 @@ Route::get('/gagal', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->resource('/dashboard', DashboardController::class);
+Route::middleware(['auth:sanctum', 'verified'])->resource('/export', ExportController::class);
 Route::resource('/nasabah', NasabahController::class);
 
 

@@ -20,7 +20,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta name="author" content="LEFT4CODE">
         <title>Selamat</title>
         <!-- BEGIN: CSS Assets-->
-        <link rel="stylesheet" href="dist/css/app.css" />
+        <link rel="stylesheet" href="../../../dist/css/app.css" />
         <!-- END: CSS Assets-->
     </head>
     <!-- END: Head -->
@@ -35,7 +35,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="intro-x text-8xl font-medium">Selamat</div>
                     <div class="intro-x text-xl lg:text-3xl font-medium mt-5">Anda Berhasil Mendaftar.</div>
                     <div class="intro-x text-lg mt-3">Dalam 2x24 Jam Anda Akan Kami Hubungi.</div>
-                    <button class="intro-x btn py-3 px-4 text-white border-white dark:border-darkmode-400 dark:text-slate-200 mt-10">Daftar Kembali</button>
+                    <a href="/" class="intro-x btn py-3 px-4 text-white border-white dark:border-darkmode-400 dark:text-slate-200 mt-10">Daftar Kembali</a>
                 </div>
             </div>
             <!-- END: Error Page -->

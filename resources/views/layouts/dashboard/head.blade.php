@@ -10,7 +10,7 @@
         <meta name="author" content="IDEVELOPE">
         <title>{{ $title }}</title>
         <!-- BEGIN: CSS Assets-->
-        <link rel="stylesheet" href="dist/css/app.css" />
+        <link rel="stylesheet" href="../../../dist/css/app.css" />
         <!-- END: CSS Assets-->
     </head>
     <!-- END: Head -->
